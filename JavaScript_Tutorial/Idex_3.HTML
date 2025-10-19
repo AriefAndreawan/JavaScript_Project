@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooleanJavacripts</title>
+</head>
+<body>
+    <script>
+        let x = 5;
+        let y = 6;
+        let z = 7;
+
+        var besar = z < x ;
+        var kecil = y > z ;
+        var sama  = z == x ;
+
+        document.writeln("Hasilnya adalah=" + besar + "<br>");
+        document.writeln("Hasilnya adalah=" + kecil + "<br>");
+        document.writeln("Hasilnya adalah=" + sama + "<br>");
+
+       var angka1 = parseFloat(prompt("Masukkan angka pertama:"));
+
+    // 2. Ambil input operator perbandingan (<, >, ==, ===)
+    var operator = prompt("Masukkan operator perbandingan (<, >, ==, ===):");
+
+    // 3. Ambil input angka kedua
+    var angka2 = parseFloat(prompt("Masukkan angka kedua:"));
+
+    // 4. Proses logika perbandingan
+    var hasil;
+
+    if (operator === "<") {
+      hasil = angka1 < angka2;
+    } else if (operator === ">") {
+      hasil = angka1 > angka2;
+    } else if (operator === "==") {
+      hasil = angka1 == angka2;
+    } else if (operator === "===") {
+      hasil = angka1 === angka2;
+    } else {
+      hasil = "Operator tidak dikenali!";
+    }
+
+    // 5. Tampilkan hasil
+    document.writeln("Hasil dari: " + angka1 + " " + operator + " " + angka2 + " = " + hasil);
+    </script>
+</body>
+</html>
