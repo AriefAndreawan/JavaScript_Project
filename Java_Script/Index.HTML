@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Semua Bab JavaScript</title>
+</head>
+<body>
+    <h1>Contoh Semua Bab JavaScript</h1>
+    <script>
+        // ============================
+        // Pendahuluan
+        // ============================
+        document.writeln("<h2>Pendahuluan</h2>");
+        document.writeln("JavaScript digunakan untuk membuat web interaktif.<br>");
+
+        // ============================
+        // Pengenalan JavaScript
+        // ============================
+        document.writeln("<h2>Pengenalan JavaScript</h2>");
+        console.log("Halo, ini JavaScript!");
+
+        // ============================
+        // Program Hello World
+        // ============================
+        document.writeln("<h2>Program Hello World</h2>");
+        document.writeln("Hello World di halaman web<br>");
+        console.log("Hello World di console");
+
+        // ============================
+        // Komentar
+        // ============================
+        document.writeln("<h2>Komentar</h2>");
+        // Ini komentar satu baris
+        /* Ini komentar beberapa baris */
+        document.writeln("Lihat kode untuk contoh komentar<br>");
+
+        // ============================
+        // Tipe Data Number
+        // ============================
+        document.writeln("<h2>Tipe Data Number</h2>");
+        let umur = 25;
+        let pi = 3.14;
+        document.writeln(`Umur: ${umur}, Pi: ${pi} <br>`);
+
+        // ============================
+        // Tipe Data Boolean
+        // ============================
+        document.writeln("<h2>Tipe Data Boolean</h2>");
+        let isRaining = true;
+        let isSuny = false;
+        document.writeln(`Hujan: ${isRaining}, Cerah: ${isSuny} <br>`);
+
+        // ============================
+        // Tipe Data String
+        // ============================
+        document.writeln("<h2>Tipe Data String</h2>");
+        let nama = "Arief";
+        let pesan = 'Halo, selamat datang!';
+        document.writeln(`Nama: ${nama}, Pesan: ${pesan} <br>`);
+
+        // ============================
+        // Variable
+        // ============================
+        document.writeln("<h2>Variable</h2>");
+        let angka = 10;
+        const PI_CONST = 3.14;
+        var namaVar = "Budi";
+        document.writeln(`angka: ${angka}, PI: ${PI_CONST}, namaVar: ${namaVar} <br>`);
+
+        // ============================
+        // Operator Matematika
+        // ============================
+        document.writeln("<h2>Operator Matematika</h2>");
+        let a = 5, b = 2;
+        document.writeln(`a+b=${a+b}, a-b=${a-b}, a*b=${a*b}, a/b=${a/b}, a%b=${a%b}, a**b=${a**b} <br>`);
+
+        // ============================
+        // Operator Perbandingan
+        // ============================
+        document.writeln("<h2>Operator Perbandingan</h2>");
+        document.writeln(`5=='5': ${5=='5'} <br>`);
+        document.writeln(`5==='5': ${5==='5'} <br>`);
+        document.writeln(`5>3: ${5>3} <br>`);
+
+        // ============================
+        // Operator Logika
+        // ============================
+        document.writeln("<h2>Operator Logika</h2>");
+        let x = true, y = false;
+        document.writeln(`x && y: ${x && y}, x || y: ${x || y}, !x: ${!x} <br>`);
+
+        // ============================
+        // Console
+        // ============================
+        document.writeln("<h2>Console</h2>");
+        console.log("Log");
+        console.warn("Peringatan");
+        console.error("Error!");
+        console.table({nama: "Budi", umur: 25});
+        document.writeln("Cek console untuk melihat log, warn, error, dan table<br>");
+
+        // ============================
+        // String Template
+        // ============================
+        document.writeln("<h2>String Template</h2>");
+        let namaUser = "Arief";
+        let umurUser = 24;
+        document.writeln(`Nama: ${namaUser}, Umur: ${umurUser} <br>`);
+
+        // ============================
+        // Konversi String dan Number
+        // ============================
+        document.writeln("<h2>Konversi String dan Number</h2>");
+        let str = "123";
+        let num = Number(str);
+        document.writeln(`String "123" ke Number: ${num} <br>`);
+        let n = 456;
+        let s = String(n);
+        document.writeln(`Number 456 ke String: ${s} <br>`);
+
+        // ============================
+        // Tipe Data Array
+        // ============================
+        document.writeln("<h2>Tipe Data Array</h2>");
+        let fruits = ["apel", "jeruk", "mangga"];
+        fruits.push("pisang");
+        document.writeln(`Fruits: ${fruits.join(", ")} <br>`);
+
+        // ============================
+        // Tipe Data Object
+        // ============================
+        document.writeln("<h2>Tipe Data Object</h2>");
+        let person = {nama:"Arief", umur:24, alamat:"Jakarta"};
+        document.writeln(`Nama: ${person.nama}, Umur: ${person.umur}, Alamat: ${person.alamat} <br>`);
+
+        // ============================
+        // If Expression
+        // ============================
+        document.writeln("<h2>If Expression</h2>");
+        let age = 18;
+        if(age >= 18){
+            document.writeln("Dewasa <br>");
+        } else {
+            document.writeln("Belum Dewasa <br>");
+        }
+
+        // ============================
+        // Popup
+        // ============================
+        // document.writeln("<h2>Popup</h2>");
+        // alert("Selamat datang!"); 
+        // let namaPrompt = prompt("Masukkan nama:"); 
+        // let confirmUser = confirm("Apakah Anda yakin?");
+        document.writeln("Popup (alert, prompt, confirm) bisa dicoba di browser console <br>");
+
+        // ============================
+        // Undefined
+        // ============================
+        document.writeln("<h2>Undefined</h2>");
+        let u;
+        document.writeln(`Nilai u: ${u} <br>`);
+
+        // ============================
+        // Null
+        // ============================
+        document.writeln("<h2>Null</h2>");
+        let nVal = null;
+        document.writeln(`Nilai nVal: ${nVal} <br>`);
+
+        // ============================
+        // Switch Expression
+        // ============================
+        document.writeln("<h2>Switch Expression</h2>");
+        let day = "Senin";
+        switch(day){
+            case "Senin":
+                document.writeln("Hari ini Senin <br>");
+                break;
+            default:
+                document.writeln("Hari lain <br>");
+        }
+
+        // ============================
+        // Operator typeof
+        // ============================
+        document.writeln("<h2>Operator typeof</h2>");
+        let xType = 10;
+        document.writeln(`typeof xType: ${typeof xType} <br>`);
+
+        // ============================
+        // Operator in
+        // ============================
+        document.writeln("<h2>Operator in</h2>");
+        let objTest = {nama:"Budi"};
+        document.writeln(`"nama" in objTest: ${"nama" in objTest} <br>`);
+
+        // ============================
+        // Ternary Operator
+        // ============================
+        document.writeln("<h2>Ternary Operator</h2>");
+        let stat = age>=18 ? "Dewasa" : "Belum Dewasa";
+        document.writeln(`Status: ${stat} <br>`);
+
+        // ============================
+        // Nullish Coalescing Operator
+        // ============================
+        document.writeln("<h2>Nullish Coalescing Operator</h2>");
+        let nameNull = null;
+        document.writeln(`Nama: ${nameNull ?? "Guest"} <br>`);
+
+        // ============================
+        // Optional Chaining
+        // ============================
+        document.writeln("<h2>Optional Chaining</h2>");
+        let user = {profile:{name:"Budi"}};
+        document.writeln(`Nama: ${user.profile?.name}, Telepon: ${user.contact?.phone} <br>`);
+
+        // ============================
+        // Falsy dan Truthy
+        // ============================
+        document.writeln("<h2>Falsy dan Truthy</h2>");
+        if("") document.writeln("True<br>"); else document.writeln("False<br>");
+
+        // ============================
+        // Operator Logika di Non Boolean
+        // ============================
+        document.writeln("<h2>Operator Logika di Non Boolean</h2>");
+        document.writeln(`null || "Default": ${null || "Default"} <br>`);
+        document.writeln(`"Value" && "Next": ${"Value" && "Next"} <br>`);
+
+        // ============================
+        // For Loop
+        // ============================
+        document.writeln("<h2>For Loop</h2>");
+        for(let i=0;i<5;i++){
+            document.writeln(`i=${i} <br>`);
+        }
+
+        // ============================
+        // While Loop
+        // ============================
+        document.writeln("<h2>While Loop</h2>");
+        let iWhile = 0;
+        while(iWhile<5){
+            document.writeln(`iWhile=${iWhile} <br>`);
+            iWhile++;
+        }
+
+        // ============================
+        // Do While Loop
+        // ============================
+        document.writeln("<h2>Do While Loop</h2>");
+        let iDo = 0;
+        do{
+            document.writeln(`iDo=${iDo} <br>`);
+            iDo++;
+        }while(iDo<5);
+
+        // ============================
+        // Break dan Continue
+        // ============================
+        document.writeln("<h2>Break dan Continue</h2>");
+        for(let i=0;i<5;i++){
+            if(i===2) continue;
+            if(i===4) break;
+            document.writeln(`i=${i} <br>`);
+        }
+
+        // ============================
+        // Label
+        // ============================
+        document.writeln("<h2>Label</h2>");
+
+        </script>
+       
